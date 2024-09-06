@@ -5,21 +5,75 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Brickstore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="LEGO Készlet Nyilvántartás" Height="450" Width="800"
+        Background="#E1F5FE">
     <Grid>
-        <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Vertical" Margin="20">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button Content="Fájl megnyitása" Width="120" Click="OpenFile_Click"/>
-                <TextBox x:Name="FilterTextBox" Width="200" Margin="10,0,0,0"  TextChanged="FilterTextBox_TextChanged"/>
+                <Button Content="Fájl megnyitása" Width="140" Height="40" Margin="0,0,10,0" 
+                        Background="#8E24AA" Foreground="White" FontWeight="Bold"
+                        BorderThickness="0" Click="OpenFile_Click"/>
+
+                <TextBox x:Name="FilterTextBox" Width="250" Height="40" Margin="0,0,0,0" Padding="10"
+                         Background="#FFFFFF" BorderBrush="#FF5722" BorderThickness="3"
+                         FontSize="14" VerticalContentAlignment="Center"
+                         Foreground="#424242"
+                         TextChanged="FilterTextBox_TextChanged"/>
             </StackPanel>
 
-            <DataGrid x:Name="LegoDataGrid">
+            <DataGrid x:Name="LegoDataGrid"
+                      AutoGenerateColumns="False"
+                      CanUserSortColumns="True"
+                      Background="#FAFAFA"
+                      AlternatingRowBackground="#FFCCBC"
+                      BorderBrush="#FF5722"
+                      RowBackground="#FFE0B2"
+                      Foreground="#212121"
+                      ColumnHeaderHeight="50"
+                      RowHeight="45"
+                      HeadersVisibility="Column"
+                      HorizontalGridLinesBrush="#FF7043"
+                      VerticalGridLinesBrush="#FF7043"
+                      Margin="0,10,0,0"
+                      BorderThickness="2">
+
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#0288D1"/>
+                        <Setter Property="Foreground" Value="#FFFFFF"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="FontSize" Value="16"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Height" Value="50"/>
+                        <Setter Property="BorderBrush" Value="#0277BD"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                    </Style>
+
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="BorderBrush" Value="#FF7043"/>
+                    </Style>
+
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="8"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property="Foreground" Value="#212121"/>
+                        <Setter Property="BorderBrush" Value="#FF7043"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                    </Style>
+                </DataGrid.Resources>
+
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ItemID" x:Name="ItemID"/>
-                    <DataGridTextColumn Header="ItemName" x:Name="ItemName"/>
-                    <DataGridTextColumn Header="CategoryName" x:Name="CategoryName"/>
-                    <DataGridTextColumn Header="ColorName" x:Name="ColorName"/>
-                    <DataGridTextColumn Header="Qty" x:Name="Qty"/>
+                    <DataGridTextColumn Header="ItemID" Width="*"/>
+                    <DataGridTextColumn Header="ItemName" Width="*"/>
+                    <DataGridTextColumn Header="CategoryName" Width="*"/>
+                    <DataGridTextColumn Header="ColorName" Width="*"/>
+                    <DataGridTextColumn Header="Qty" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>

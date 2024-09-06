@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF_Brickstore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Brickstore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="Fájl megnyitása" Width="120" Click="OpenFile_Click"/>
+                <TextBox x:Name="FilterTextBox" Width="200" Margin="10,0,0,0"  TextChanged="FilterTextBox_TextChanged"/>
+            </StackPanel>
+
+            <DataGrid x:Name="LegoDataGrid">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ItemID" x:Name="ItemID"/>
+                    <DataGridTextColumn Header="ItemName" x:Name="ItemName"/>
+                    <DataGridTextColumn Header="CategoryName" x:Name="CategoryName"/>
+                    <DataGridTextColumn Header="ColorName" x:Name="ColorName"/>
+                    <DataGridTextColumn Header="Qty" x:Name="Qty"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

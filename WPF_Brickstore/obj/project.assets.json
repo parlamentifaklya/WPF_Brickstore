@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\monus.bence\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kokenyesi.andor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monus.bence\\source\\repos\\WPF_Brickstore\\WPF_Brickstore\\WPF_Brickstore.csproj",
+      "projectUniqueName": "C:\\Users\\kokenyesi.andor\\Source\\Repos\\WPF_Brickstore\\WPF_Brickstore\\WPF_Brickstore.csproj",
       "projectName": "WPF_Brickstore",
-      "projectPath": "C:\\Users\\monus.bence\\source\\repos\\WPF_Brickstore\\WPF_Brickstore\\WPF_Brickstore.csproj",
-      "packagesPath": "C:\\Users\\monus.bence\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monus.bence\\source\\repos\\WPF_Brickstore\\WPF_Brickstore\\obj\\",
+      "projectPath": "C:\\Users\\kokenyesi.andor\\Source\\Repos\\WPF_Brickstore\\WPF_Brickstore\\WPF_Brickstore.csproj",
+      "packagesPath": "C:\\Users\\kokenyesi.andor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kokenyesi.andor\\Source\\Repos\\WPF_Brickstore\\WPF_Brickstore\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\monus.bence\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\kokenyesi.andor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

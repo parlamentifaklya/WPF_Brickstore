@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF_Brickstore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6bb8c7f9f567e29dd54b97cb0111b008cb28799")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF_Brickstore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF_Brickstore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
